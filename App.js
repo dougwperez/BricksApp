@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import TopBar from './components/TopBar.js';
+import BottomBar from './components/BottomBar.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <TopBar />
+      <Text>Content Here</Text>
       <StatusBar style="auto" />
+      <BottomBar />
     </View>
   );
 }
